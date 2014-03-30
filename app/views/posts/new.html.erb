@@ -1,0 +1,18 @@
+<div class="genie-box col-xs-6 col-xs-offset-3">
+
+<h2>
+	Upload your funny image
+</h2>
+
+<br/>
+<br/>
+
+<%= simple_form_for @post do |f| %>
+<%= f.input :title, label: 'What is this image about?' , placeholder: 'Drunken Monkey' %>
+<br/>
+<%= f.input :description, label: 'tell me more' , placeholder: 'This monkey caught a wiff and falls out of a tree'%>
+<%= f.button :submit, class: 'btn btn-warning' %>
+
+<% end %>
+
+</div>
